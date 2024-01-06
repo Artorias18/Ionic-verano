@@ -1,0 +1,63 @@
+ion-header{
+  ion-icon{
+    font-size: 30px;
+    position: relative;
+    margin-right: 10px;
+  }
+  ion-button{
+    width: 10px;
+  }
+
+  #notifications-badge-msg{
+    background-color: rgb(253, 4, 4);
+    position: absolute;
+    top: 5px;
+    right: 85px;
+    color: #fff;
+    z-index: 111;
+  }
+  #notifications-badge{
+    background-color: rgb(253, 4, 4);
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    color: #fff;
+    z-index: 111; 
+  }
+}
+
+ion-content{
+
+  --ion-background-color: #ffffff41;
+  
+  .top{
+
+  background-color: #ffffff;
+  box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+
+
+  ion-segment{
+
+    margin-top: 10px;
+   
+    ion-segment-button{
+
+      background-color: #000000;;
+      color: #ffffff;
+
+      
+
+    }
+
+  }
+
+  }
+
+  
+}

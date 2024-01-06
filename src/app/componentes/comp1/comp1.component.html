@@ -1,0 +1,16 @@
+<ion-header>
+
+</ion-header>
+
+
+<ion-card *ngFor="let c of card">
+  <ion-card-header>
+    <ion-card-subtitle color="dark" class="ion-text-center" value="c.id">{{c.titulo}}</ion-card-subtitle>
+  </ion-card-header>
+  <img  value="c.id" src="{{c.Img}}" alt="" width="300px" height="250px">
+  <ion-card-content class="ion-text-center descripcion"><ion-item value="c.id" class="ion-text-center">{{c.descripcion}}</ion-item>
+  <ion-card-content  value="c.id" class="ion-text-center">{{c.vacunas}}</ion-card-content >
+  </ion-card-content>
+</ion-card>
+
+<router-outlet></router-outlet>

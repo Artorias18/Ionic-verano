@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="dark">
+<ion-back-button color="light" defaultHref="home" slot="start"></ion-back-button>
+    <ion-title>
+      PetAdoption
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content>
+  
+    <div class="top">
+      <ion-segment (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="uno">
+  
+          <ion-label>Postulantes</ion-label>
+  
+        </ion-segment-button>
+  
+        <ion-segment-button value="dos">
+  
+          <ion-label>Dar en adopción</ion-label>
+  
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  
+
+  </ion-content>
+  <router-outlet></router-outlet>

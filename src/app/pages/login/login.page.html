@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="card">
+
+   <h1 id="login">PetAdoption</h1>
+  </div>
+   
+<div class="middle">
+  <div class="box">
+        <p>Porfavor ingrese sus datos</p>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="User.user" ></ion-input>
+          <ion-icon class="ion-align-self-center" slot="end" name="person-circle-outline"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="User.password"></ion-input>
+          <ion-icon class="ion-align-self-center"slot="end" name="eye-outline"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-button class="boton-login "  color="dark" expand="block" (click)="ingresar()">Ingresar</ion-button >
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-center">
+            ¿No tienes una cuenta? <ion-button [routerLink]="['/register']" color="dark">Registrate</ion-button>
+          </ion-label>
+        </ion-item>
+  </div>
+</div>
+ 
+ </ion-content>
